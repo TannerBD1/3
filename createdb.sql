@@ -9,6 +9,3 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB;
 
 GRANT ALL ON credentialsDB.users TO 'admin'@'localhost' identified by 'heggett'; 
-
-
-INSERT INTO contactsTable (id, username) values(null, 'heggett');
