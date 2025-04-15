@@ -27,16 +27,16 @@ def url_checksum(url):
 	return hashlib.md5(response.content).hexdigest()
 @app.route('/checkinghash')
 def checking_hash():
-    md5 = hashlib.md5()
-    response = requests.get(url)
-    computed_hash = hashlib.md5(response)
-    combined_data = og_RESPONSE + response
-    md5.update(combined_data.encode('utf-8'))
-    post_hash = md5(combined_data.encode()).hexdigest()[:6]
-    if computed_hash == post_hash:
-    	print("Authentic RESPONSE")
-    else:
-    	print("Tampering detected")
+	md5 = hashlib.md5()
+	response = requests.get(url)
+	computed_hash = hashlib.md5(response)
+	combined_data = og_RESPONSE + response
+	md5.update(combined_data.encode('utf-8'))
+	post_hash = md5(combined_data.encode()).hexdigest()[:6]
+	if computed_hash == post_hash:
+    		print("Authentic RESPONSE")
+	else:
+    		print("Tampering detected")
 # Generation
 def create_hash(input_data):
     # Convert input to string if not already
