@@ -1,8 +1,14 @@
-import hashlib
 import requests
-import mysql
-//Import imagehash
-//From simple_file_checksum import get_checksum
+from flask import Flask, render_template
+from markupsafe import Markup
+import random
+import mysql.connector
+import configparser
+from flask_httpauth import HTTPBasicAuth
+from werkzeug.security import generate_password_hash, check_password_hash
+import hashlib
+# Import imagehash
+# From simple_file_checksum import get_checksum
 app = Flask(__name__)
 
 config=configparser.ConfigParser()
