@@ -14,7 +14,7 @@ clone the repository into your vm
 from the terminal run:
 
 sudo mysql
-\. createdDB.sql
+createdDB.sql
 
 
 close mysql, and run create_user.py 
