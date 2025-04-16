@@ -3,6 +3,7 @@
 How to install this to your machine.
 
 make sure your python environment has the following intalled, if you have been following the lectures it should be that way:
+
 flask
 markupsafe
 mysql.connector
@@ -14,6 +15,7 @@ clone the repository into your vm
 from the terminal run:
 
 sudo mysql
+
 createdDB.sql
 
 
