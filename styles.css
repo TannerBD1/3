@@ -1,0 +1,17 @@
+
+body {
+  background-color: #D1F2EB;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  margin-top: 12px;
+}
