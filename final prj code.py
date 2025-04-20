@@ -19,7 +19,6 @@ dbUser=database['user']
 dbPass=database['pass']
 cnx = mysql.connector.connect(user=dbUser, password=dbPass, host=dbHost, database=db)
 
-#TODO check for xss stuff
 #TODO integrate group code
 
 def genHash(inputText):

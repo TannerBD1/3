@@ -16,7 +16,7 @@ from the terminal run:
 
 sudo mysql
 
-createdDB.sql
+ \\. createdb.sql
 
 
 close mysql, and run create_user.py 
