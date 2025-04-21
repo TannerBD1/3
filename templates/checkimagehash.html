@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Check Image Hash</title>
+</head>
+<link href="style.css" rel="stylesheet">
+<ul>
+<body>
+  <h2>Check Image Hash Result</h2>
+  <p> 'uploaded_hash': {{md5_hash}},</p>
+  <p>'stored_hash': {{STORED_HASH}},</p>
+  <p>'match': {{is_match}} </p>
+  <img src="{{ url_for('static', filename='images/Dropped Image.png')}}" alt ="github" width='420">
+</body>
+</ul>
+</html>
+<form method="POST" enctype="multipart/form-data" action="/upload">
+  <input type="file" name="image">
+  <input type="submit">
+</form>
