@@ -100,7 +100,7 @@ def get_md5_hash():
       for chunk in iter(lambda: f.read(4096), b""):
         md5_hash.update(chunk)
     md5_hash = md5_hash.hexdigest()
-    STORED_HASH = md5_hash
+    STORED_HASH = "ce6e9833cad8a1f863a1a5b6986c38b3"
     is_match = (md5_hash == STORED_HASH)
     print(md5_hash)
     return render_template('checkimagehash.html', STORED_HASH=STORED_HASH, md5_hash=md5_hash, is_match=is_match)
